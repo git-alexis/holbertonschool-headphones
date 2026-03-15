@@ -1,6 +1,6 @@
 :root {
     --primary-color: #FF6565;
-    --text-color: #ffffff;
+    --text-color-white: #ffffff;
     --button-opacity: 0.9;
 }
 
@@ -10,19 +10,25 @@ body {
 }
 
 h1, span, p, a, button {
-    color: var(--text-color);
+    color: var(--text-color-white);
 }
 
-a:hover, a:active {
+a:not(.btn):hover, a:not(.btn):active {
     color: var(--primary-color);
 }
 
-button {
+a.btn, button {
     background-color: var(--primary-color);
+    cursor: pointer;
 }
 
-button:hover, button:active {
+a.btn:hover, a.btn:active, button:hover, button:active {
     opacity: var(--button-opacity);
+}
+
+p {
+    text-align: center;
+    line-height: 1.5;
 }
 
 header {
@@ -46,7 +52,7 @@ header {
     display: none;
     font-size: 28px;
     cursor: pointer;
-    color: #ffffff;
+    color: var(--text-color-white);
 }
 
 .nav {
@@ -56,7 +62,7 @@ header {
     gap: 50px;
 }
 
-.nav > a {
+.nav > a, a.btn {
     text-decoration: none;
     font-weight: bold;
 }
@@ -73,24 +79,19 @@ header {
     margin-bottom: 0rem;
 }
 
-.content span, .content button, .content p {
+.content span, .content a.btn, .content p {
     margin-bottom: 2rem;
 }
 
-.content span, .content button {
+.content span {
     font-weight: bold;
 }
 
-.content button {
+.content a.btn {
     padding: 1rem;
     border: none;
     border-radius: 22px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.content p {
-    text-align: center;
-    line-height: 1.5;
 }
 
 @media (max-width: 580px) {
