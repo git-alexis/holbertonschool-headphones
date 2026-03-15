@@ -1,12 +1,14 @@
 :root {
-    --primary-color: #FF6565;
+    --font-main: "Source Sans Pro", sans-serif;
     --text-color-white: #ffffff;
+    --primary-color: #FF6565;
     --button-opacity: 0.9;
 }
 
-body { 
+body {
     max-width: 1000px;
     margin: 0 auto;
+    font-family: var(--font-main);
 }
 
 h1, span, p, a, button {
@@ -88,9 +90,9 @@ header {
 }
 
 .content a.btn {
-    padding: 1rem;
+    padding: 1rem 1.8rem;
     border: none;
-    border-radius: 22px;
+    border-radius: 36px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
