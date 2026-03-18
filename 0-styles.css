@@ -61,7 +61,7 @@ header {
     display: flex;
     align-items: center;
     margin-left: auto;
-    gap: 50px;
+    gap: 14px;
 }
 
 .nav > a, a.btn {
