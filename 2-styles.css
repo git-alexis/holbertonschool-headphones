@@ -103,11 +103,20 @@ header {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-section {
-    margin-top: 4rem;
+.block-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.block-images > div {
+    width: 20%;
 }
 
 #sec-what-we-do {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 
@@ -120,23 +129,30 @@ section {
 }
 
 #sec-what-we-do > p {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 
-.block-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-}
-
-.block-images > div {
-    width: 20%;
-}
-
-.block-images img {
+#sec-what-we-do img {
     width: 63px;
     height: 63px;
+}
+
+#sec-our-results {
+    background-image: url("images/background-2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+#sec-our-results h1, #sec-our-results p {
+    padding: 0rem 11rem;
+}
+
+#sec-our-results p {
+    margin-bottom: 4rem;
 }
 
 @media (max-width: 768px) {
@@ -149,7 +165,7 @@ section {
         padding: 0rem 1rem;
     }
 
-    #sec-what-we-do h1, #sec-what-we-do > p {
+    #sec-what-we-do h1, #sec-what-we-do > p, #sec-our-results h1, #sec-our-results p {
         padding: 0rem 3rem;
     }
 
@@ -208,7 +224,7 @@ section {
         padding: 0rem;
     }
 
-    #sec-what-we-do h1, #sec-what-we-do > p {
+    #sec-what-we-do h1, #sec-what-we-do > p, #sec-our-results h1, #sec-our-results p {
         padding: 0rem 1rem;
     }
 
